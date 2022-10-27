@@ -4,15 +4,15 @@ import Link from 'next/link'
 import { useAuth } from '../context/AuthContext'
 import { useRouter } from 'next/router'
 
-const NavbarComp = () => {
+const NavbarComponent = () => {
   const { user, logout } = useAuth()
   const router = useRouter()
 
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="yellow" expand="lg">
       <Container>
         <Link href="/" passHref>
-          <Navbar.Brand>NextJS Firebase Auth</Navbar.Brand>
+          <Navbar.Brand>Read Funny Chuck Norris Quotes</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -31,7 +31,7 @@ const NavbarComp = () => {
             ) : (
               <>
                 <Link href="/signup" passHref>
-                  <Nav.Link>Signup</Nav.Link>
+                  <Nav.Link>Register</Nav.Link>
                 </Link>
                 <Link href="/login" passHref>
                   <Nav.Link>Login</Nav.Link>
@@ -45,4 +45,4 @@ const NavbarComp = () => {
   )
 }
 
-export default NavbarComp
+export default NavbarComponent

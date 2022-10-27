@@ -44,7 +44,7 @@ const Login = () => {
             value={data.email}
             required
             type="email"
-            placeholder="Enter email"
+            placeholder="Enter your email adress here..."
           />
         </Form.Group>
 
@@ -60,7 +60,7 @@ const Login = () => {
             value={data.password}
             required
             type="password"
-            placeholder="Password"
+            placeholder="Enter your password here..."
           />
         </Form.Group>
         <Button variant="primary" type="submit">
